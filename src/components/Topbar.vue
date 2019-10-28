@@ -1,27 +1,18 @@
 <template>
-  <div>
-    <md-tabs md-sync-route>
-      <md-tab id="tab-home" md-label="Home" to="/components/tabs" exact></md-tab>
-      <md-tab id="tab-pages" md-label="Pages" to="/components/tabs/pages">
-        <md-list>
-          <md-list-item to="/components/tabs/pages/1">Go to Subpage 1</md-list-item>
-          <md-list-item to="/components/tabs/pages/2">Go to Subpage 2</md-list-item>
-        </md-list>
+  <div class="main-navigation--container">
+    <h1 class="main-navigation--title">title</h1>
+    <md-tabs md-sync-route class="main-navigation">
+      <md-tab id="tab-home" md-label="Producto" to="/producto" exact>Home Tab</md-tab>
+      <md-tab id="tab-pages" md-label="Caracteristicas" to="/caracteristicas">
+        Pages tab
+        <p>Unde provident nemo reiciendis officia, possimus repellendus. Facere dignissimos dicta quis rem. Aliquam aspernatur dolor atque nisi id deserunt laudantium quam repellat.</p>
       </md-tab>
-      <md-tab id="tab-posts" md-label="Posts" to="/components/tabs/posts"></md-tab>
-      <md-tab id="tab-favorites" md-label="Favorites" to="/components/tabs/favorites"></md-tab>
-      <md-tab id="tab-disabled" md-label="Disabled" md-disabled></md-tab>
-    </md-tabs>
-    <h2>Mirror Subpage</h2>
-    <md-tabs md-sync-route>
-      <md-tab id="tab-pages-1" md-label="Pages 1" to="/components/tabs/pages/1">Subpage 1</md-tab>
-      <md-tab id="tab-pages-2" md-label="Pages 2" to="/components/tabs/pages/2">Subpage 2</md-tab>
     </md-tabs>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'TabRouter'
-  }
+export default {
+  name: "TabContent"
+};
 </script>

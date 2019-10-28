@@ -1,0 +1,41 @@
+:root{
+    --nav-background:#EDEDED;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+}
+
+.main-navigation .md-tabs-navigation{
+    display: flex !important;
+    justify-content: center !important;
+    width: 98%;
+    margin: auto;
+}
+
+.md-tabs-navigation .md-button{
+    flex: 1;
+    max-width: none !important;
+}
+
+.main-navigation--container{
+    background: var(--nav-background);
+}
+.main-navigation{
+    background: var(--nav-background);
+}
+
+.main-navigation--title{
+    margin: 0;
+    padding: 1rem;
+}
+.md-tab-nav-button {
+    background: var(--nav-background);
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}

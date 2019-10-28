@@ -1,6 +1,6 @@
 import Vue from "vue";
-import Topbar from "./components/Topbar.vue";
 import VueRouter from "vue-router";
+import app from "./App.vue";
 import {
   MdButton,
   MdContent,
@@ -9,6 +9,8 @@ import {
 } from "vue-material/dist/components";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
+import "./styles/main.css";
+import store from "./store";
 
 Vue.use(VueRouter);
 Vue.use(MdButton);
@@ -22,12 +24,17 @@ const linkActiveClass = "my-link-active-class";
 // pass custom class to Vue Material
 Vue.material.router.linkActiveClass = linkActiveClass;
 
+const Foo = { template: "<div>foo</div>" };
+const Bar = { template: "<div>bar</div>" };
+
+// 2. Define some routes
+// Each route should map to a component. The "component" can
+// either be an actual component constructor created via
+// Vue.extend(), or just a component options object.
+// We'll talk about nested routes later.
 const routes = [
-  {
-    path: "/",
-    name: "TabRouter",
-    component: { template: Topbar }
-  }
+  { path: "/foo", component: Foo },
+  { path: "/bar", component: Bar }
 ];
 // pass custom class
 const router = new VueRouter({
@@ -36,5 +43,7 @@ const router = new VueRouter({
 });
 
 new Vue({
-  router
+  router,
+  store,
+  render: h => h(app)
 }).$mount("#app");
