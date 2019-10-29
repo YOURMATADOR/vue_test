@@ -5,7 +5,10 @@ import {
   MdButton,
   MdContent,
   MdTabs,
-  MdList
+  MdList,
+  MdField,
+  MdMenu,
+  MdProgress
 } from "vue-material/dist/components";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
@@ -15,8 +18,11 @@ import store from "./store";
 Vue.use(VueRouter);
 Vue.use(MdButton);
 Vue.use(MdContent);
+Vue.use(MdMenu);
 Vue.use(MdTabs);
+Vue.use(MdField);
 Vue.use(MdList);
+Vue.use(MdProgress);
 Vue.config.productionTip = false;
 
 const linkActiveClass = "my-link-active-class";

@@ -1,41 +1,107 @@
-:root{
-    --nav-background:#EDEDED;
+:root {
+  --nav-background: #ededed;
 }
 
-body{
-    width: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    top: 0;
-    left: 0 ;
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.main-navigation .md-tabs-navigation{
-    display: flex !important;
-    justify-content: center !important;
-    width: 98%;
-    margin: auto;
+.main-navigation .md-tabs-navigation {
+  display: flex !important;
+  justify-content: center !important;
+  width: 98%;
+  margin: auto;
 }
 
-.md-tabs-navigation .md-button{
-    flex: 1;
-    max-width: none !important;
+.md-tabs-navigation .md-button {
+  flex: 1;
+  max-width: none !important;
 }
 
-.main-navigation--container{
-    background: var(--nav-background);
+.main-navigation--container {
+  background: var(--nav-background);
 }
-.main-navigation{
-    background: var(--nav-background);
+.main-navigation {
+  background: var(--nav-background);
 }
 
-.main-navigation--title{
-    margin: 0;
-    padding: 1rem;
+.main-navigation--title {
+  margin: 0;
+  padding: 1rem;
 }
 .md-tab-nav-button {
-    background: var(--nav-background);
-    color: black !important;
-    font-weight: bold;
-    text-transform: uppercase;
+  background: var(--nav-background);
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-container {
+  display: flex;
+}
+
+.images-product-container {
+  flex: 1 1 50%;
+  margin-left: 2rem;
+}
+.product-form-container {
+  flex: 1 1 50%;
+}
+.loading {
+  margin: auto;
+}
+
+.product-image {
+  width: 20%;
+  height: auto;
+}
+
+.product-attr-container {
+  display: flex;
+}
+.product-attr-element {
+  flex: 1;
+  padding: 0 1rem 0 1rem;
+}
+
+.product-attr-input--list {
+  display: flex;
+  flex: 1;
+}
+.product-attr-input--list .md-field {
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.product-dim-container {
+  display: flex;
+}
+.product-dim-element {
+  flex: 1;
+}
+
+.product-dim-input--list {
+  display: flex;
+}
+.product-dim-input--list .md-field {
+  width: 25%;
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+.md-content {
+  min-height: 50vh;
+}
+
+.margin-top {
+  margin-top: 3rem !important;
+}
+
+.main-navigation--top {
+  width: 100%;
+  display: flex;
+justify-content: space-between;
+
 }
