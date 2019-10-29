@@ -3,7 +3,7 @@
     <h2>General</h2>
       <md-field>
         <label>Nombre</label>
-        <md-input :value="name" @input="(e)=>set_value_input(e,'name')"></md-input>
+        <md-input :value="long_name" @input="(e)=>set_value_input(e,'long_name')"></md-input>
       </md-field>
       <md-field>
         <label>Modelo</label>
@@ -28,7 +28,7 @@ import { mapState } from "vuex";
 export default {
   name: "Producto",
   computed: mapState({
-    name: state => state.Producto.name,
+    long_name: state => state.Producto.long_name,
     plain_description: state => state.Producto.plain_description,
     model: state => state.Producto.model,
     brand: state => state.Producto.brand,
@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     set_value_input: function(value, e) {
-      this.$store.dispatch("_set_product_value", {
+      this.$store.dispatch("_compare_and_set_value", {
         value,
         input: e
       });

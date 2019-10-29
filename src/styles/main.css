@@ -1,107 +1,106 @@
 :root {
-  --nav-background: #ededed;
+	--nav-background: #ededed;
 }
 
 body {
-  width: 100%;
-  overflow-x: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
+	width: 100%;
+	overflow-x: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .main-navigation .md-tabs-navigation {
-  display: flex !important;
-  justify-content: center !important;
-  width: 98%;
-  margin: auto;
+	display: flex !important;
+	justify-content: center !important;
+	width: 98%;
+	margin: auto;
 }
 
 .md-tabs-navigation .md-button {
-  flex: 1;
-  max-width: none !important;
+	flex: 1;
+	max-width: none !important;
 }
 
 .main-navigation--container {
-  background: var(--nav-background);
+	background: var(--nav-background);
 }
 .main-navigation {
-  background: var(--nav-background);
+	background: var(--nav-background);
 }
 
 .main-navigation--title {
-  margin: 0;
-  padding: 1rem;
+	margin: 0;
+	padding: 1rem;
 }
 .md-tab-nav-button {
-  background: var(--nav-background);
-  color: black !important;
-  font-weight: bold;
-  text-transform: uppercase;
+	background: var(--nav-background);
+	color: black !important;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .product-container {
-  display: flex;
+	display: flex;
 }
 
 .images-product-container {
-  flex: 1 1 50%;
-  margin-left: 2rem;
+	flex: 1 1 50%;
+	margin-left: 2rem;
 }
 .product-form-container {
-  flex: 1 1 50%;
+	flex: 1 1 50%;
 }
 .loading {
-  margin: auto;
+	margin: auto;
 }
 
 .product-image {
-  width: 20%;
-  height: auto;
+	width: 20%;
+	height: auto;
 }
 
 .product-attr-container {
-  display: flex;
+	display: flex;
 }
 .product-attr-element {
-  flex: 1;
-  padding: 0 1rem 0 1rem;
+	flex: 1;
 }
 
 .product-attr-input--list {
-  display: flex;
-  flex: 1;
+	display: flex;
+	flex: 1;
 }
 .product-attr-input--list .md-field {
-  margin: 0 0.3rem 0 0.3rem;
+	margin: 0 0.3rem 0 0.3rem;
 }
 
 .product-dim-container {
-  display: flex;
+	display: flex;
 }
 .product-dim-element {
-  flex: 1;
+	flex: 1;
+	overflow: hidden;
 }
 
 .product-dim-input--list {
-  display: flex;
+	display: flex;
 }
 .product-dim-input--list .md-field {
-  width: 25%;
-  margin: 0 0.3rem 0 0.3rem;
+	width: 23%;
+	margin: 0 0.3rem 0 0.3rem;
 }
 
 .md-content {
-  min-height: 50vh;
+	min-height: 50vh;
 }
 
 .margin-top {
-  margin-top: 3rem !important;
+	margin-top: 3rem !important;
 }
 
 .main-navigation--top {
-  width: 100%;
-  display: flex;
-justify-content: space-between;
-
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
